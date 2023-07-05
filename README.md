@@ -22,6 +22,11 @@ Per the website.
    ```
 2. Create and activate python environment
    ```sh
+   # for pip
+   pip install -r requirements.txt
+
+   # for conda
+   mv sample.environment.yml environment.yml
    conda env create -f environment.yml
    conda activate SEM_KRNL
    ```
