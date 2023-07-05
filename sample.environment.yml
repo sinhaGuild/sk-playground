@@ -1,0 +1,21 @@
+name: SEM-KRNL
+
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pyyaml
+  - python-dotenv
+  - pip
+  - pip:
+    - semantic-kernel
+    - streamlit
+    - asyncio
+
+
+
+
+
+
+
