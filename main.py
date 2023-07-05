@@ -108,7 +108,9 @@ async def main():
                 "Enter any subject or topic.",
                 "A Beaver and an eagle.",
             )
-            submitted = st.form_submit_button("$\mathcal{Submit}$")
+            submitted = st.form_submit_button(
+                "$\mathcal{Submit}$", use_container_width=True
+            )
 
             if submitted:
                 with st.container():

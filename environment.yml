@@ -1,4 +1,4 @@
-name: SEMANTIC-KERNEL
+name: SEM-KRNL
 
 channels:
   - defaults
@@ -8,11 +8,9 @@ dependencies:
   - notebook
   - pyyaml
   - python-dotenv
-  - rich
   - pip
   - pip:
     - semantic-kernel
-    - chromadb
     - streamlit
     - asyncio
 
