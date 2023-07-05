@@ -1,0 +1,6 @@
+streamlit
+pandas
+asyncio
+semantic-kernel
+python-dotenv
+pyyaml
