@@ -1,4 +1,4 @@
-# Semantic functions playground
+# Semantic Kernel playground
 
 A Streamlit based playground for trying out single and multi-skill orchestration with [Microsoft Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/overview/). Over 60+ semantic functions.
 
