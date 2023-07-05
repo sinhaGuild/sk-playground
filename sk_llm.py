@@ -1,8 +1,10 @@
 import semantic_kernel as sk
+import streamlit as st
 from semantic_kernel.connectors.ai.open_ai import (
     AzureTextCompletion,
     OpenAIChatCompletion,
 )
+
 from utils import build_skill_matrix, format_output_as_markdown
 
 SKILLS_PATH = "./skills"
@@ -28,6 +30,10 @@ class Semantic_LLM:
             )
         else:
             api_key, org_id = sk.openai_settings_from_dot_env()
+            # fix for streamlit cloud
+            if api_key is None:
+                api_key = st.secrets["OPENAI_API_KEY"]
+                org_id = st.secrets["OPENAI_ORG_ID"]
             self.kernel.add_chat_service(
                 service_id, OpenAIChatCompletion(model_id, api_key, org_id)
             )
